@@ -1,7 +1,5 @@
 package com.example.testeuol.api.service;
 
-import java.util.Optional;
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.BeanUtils;
@@ -39,13 +37,11 @@ public class ClienteService {
 	}
 	
 	public Cliente atualizar(Long id, Cliente cliente) {
-		Optional<Cliente> optionalCliente = clienteRepository.findById(id);
+		Cliente clienteSalvo = clienteRepository.findById(id).orElse(null);
 		
-		if(optionalCliente.isEmpty()) {
+		if( clienteSalvo == null ) {
 			throw new EmptyResultDataAccessException(1);
 		}
-		
-		Cliente clienteSalvo = optionalCliente.get();
 		
 		BeanUtils.copyProperties(cliente, clienteSalvo, "id");
 		return clienteRepository.save(clienteSalvo);
