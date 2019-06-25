@@ -1,0 +1,150 @@
+{
+	"id": "e2eecfc2-8681-c615-3e75-83c504abd5f4",
+	"name": "Teste Uol",
+	"description": "",
+	"order": [
+		"da785df9-731f-e3dd-9e85-207678d7bd77",
+		"e00590a2-909e-7228-af9c-cb6c1887e333",
+		"e9be6fc1-a080-d03c-5003-1165cadedfaa",
+		"a4f92bbc-2038-0b17-3d40-51376450c296",
+		"a7d09a5d-a615-dbd2-4507-7978691852c5"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1561423635783,
+	"owner": "7219338",
+	"public": false,
+	"requests": [
+		{
+			"id": "a4f92bbc-2038-0b17-3d40-51376450c296",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://daylon-testeuol-api.herokuapp.com/clientes/5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1561424231608,
+			"name": "UPDATE CLIENTE",
+			"description": "",
+			"collectionId": "e2eecfc2-8681-c615-3e75-83c504abd5f4",
+			"responses": [],
+			"rawModeData": "{\n    \"id\": 5,\n    \"nome\": \"Otavio dos Santos Costa\",\n    \"idade\": 67,\n    \"temperaturaDia\": {\n        \"temperaturaMinima\": \"15\",\n        \"temperaturaMaxima\": \"25\"\n    }\n}"
+		},
+		{
+			"id": "a7d09a5d-a615-dbd2-4507-7978691852c5",
+			"headers": "",
+			"headerData": [],
+			"url": "https://daylon-testeuol-api.herokuapp.com/clientes/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "e2eecfc2-8681-c615-3e75-83c504abd5f4",
+			"data": null,
+			"dataMode": "params",
+			"name": "DELETE CLIENTE",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1561424121395,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "da785df9-731f-e3dd-9e85-207678d7bd77",
+			"url": "https://daylon-testeuol-api.herokuapp.com/clientes",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "GET ALL CLIENTE",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "e2eecfc2-8681-c615-3e75-83c504abd5f4",
+			"rawModeData": "{\n\t\"nome\" : \"Léa Palheta dos Santos\",\n\t\"idade\" : 30,\n\t\"temperaturaDia\": {\n\t\t\"temperaturaMinima\": \"50\",\n\t\t\"temperaturaMaxima\": \"70\"\n\t\t\t\t\t\t\n\t}\n}"
+		},
+		{
+			"id": "e00590a2-909e-7228-af9c-cb6c1887e333",
+			"headers": "",
+			"headerData": [],
+			"url": "https://daylon-testeuol-api.herokuapp.com/clientes/5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1561424265991,
+			"name": "GET CLIENTE BY ID",
+			"description": "",
+			"collectionId": "e2eecfc2-8681-c615-3e75-83c504abd5f4",
+			"responses": []
+		},
+		{
+			"id": "e9be6fc1-a080-d03c-5003-1165cadedfaa",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://daylon-testeuol-api.herokuapp.com/clientes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1561424238109,
+			"name": "CREATE CLIENTE",
+			"description": "",
+			"collectionId": "e2eecfc2-8681-c615-3e75-83c504abd5f4",
+			"responses": [],
+			"rawModeData": "{\n        \"nome\": \"Otavio dos Santos Costa\",\n        \"idade\": 36\n    }"
+		}
+	]
+}
